@@ -1,0 +1,4 @@
+model_checkpoint_path: "FlappyBrain-1000027.ckpt"
+all_model_checkpoint_paths: "FlappyBrain-499948.ckpt"
+all_model_checkpoint_paths: "FlappyBrain-999963.ckpt"
+all_model_checkpoint_paths: "FlappyBrain-1000027.ckpt"
