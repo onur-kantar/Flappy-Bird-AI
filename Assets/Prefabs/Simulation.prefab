@@ -366,6 +366,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 921332885744107139}
     m_Modifications:
+    - target: {fileID: 781518283680807393, guid: 51afd259ca7f37c4ba6a39d3bc6547e0,
+        type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 51
+      objectReference: {fileID: 0}
     - target: {fileID: 2418118673019875702, guid: 51afd259ca7f37c4ba6a39d3bc6547e0,
         type: 3}
       propertyPath: pipeHandler
@@ -376,6 +381,11 @@ PrefabInstance:
       propertyPath: maxVelocityMagnitude
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2418118673019875702, guid: 51afd259ca7f37c4ba6a39d3bc6547e0,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 2688356294593076420}
     - target: {fileID: 2630285422197407740, guid: 51afd259ca7f37c4ba6a39d3bc6547e0,
         type: 3}
       propertyPath: m_LocalPosition.x

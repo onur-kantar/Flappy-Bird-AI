@@ -1128,5 +1128,20 @@ PrefabInstance:
       propertyPath: m_text
       value: 10000
       objectReference: {fileID: 0}
+    - target: {fileID: 2490806678367858646, guid: ee3fdca9756bad04daa26e9f0916645f,
+        type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2490806678367858646, guid: ee3fdca9756bad04daa26e9f0916645f,
+        type: 3}
+      propertyPath: m_DetectableTags.Array.data[0]
+      value: safe
+      objectReference: {fileID: 0}
+    - target: {fileID: 2490806678367858646, guid: ee3fdca9756bad04daa26e9f0916645f,
+        type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 51
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee3fdca9756bad04daa26e9f0916645f, type: 3}

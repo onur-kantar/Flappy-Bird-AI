@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Unity.MLAgents;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Bird : Agent
 {
@@ -9,13 +10,14 @@ public class Bird : Agent
 
     [SerializeField] private Rigidbody rb = null;
     [SerializeField] private PipeHandler pipeHandler = null;
+    [SerializeField] private TextMesh text = null;
 
     [Header("Settings")]
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private float maxVelocityMagnitude = 5f;
 
     private Vector3 startingPos;
-
+    private int score = 0;
     public override void Initialize()
     {
         startingPos = transform.position;
@@ -40,8 +42,17 @@ public class Bird : Agent
     //}
     private void OnTriggerEnter(Collider other)
     {
-        AddReward(-1.0f);
-        EndEpisode();
+        if (other.gameObject.tag == "safe")
+        {
+            score++;
+        }
+        else
+        {
+            score = 0;
+            AddReward(-1.0f);
+            EndEpisode();
+        }
+        text.text = score.ToString();
     }
 
     void Update()
